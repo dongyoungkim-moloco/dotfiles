@@ -26,6 +26,8 @@ map Q gq
 
 " Find more examples here: https://jb.gg/share-ideavimrc
 
+set ignorecase
 nnoremap mm :action ToggleBookmark<CR>
 nnoremap mi :action EditBookmark<CR>
 nnoremap gi :action GotoImplementation<CR>
+nnoremap gD :action FindUsages<CR>
