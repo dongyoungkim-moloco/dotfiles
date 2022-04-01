@@ -28,3 +28,4 @@ map Q gq
 
 nnoremap mm :action ToggleBookmark<CR>
 nnoremap mi :action EditBookmark<CR>
+nnoremap gi :action GotoImplementation<CR>
