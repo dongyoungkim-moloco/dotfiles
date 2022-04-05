@@ -5,6 +5,7 @@
 " Show a few lines of context around the cursor. Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
 set scrolloff=5
+set hlsearch
 
 " Do incremental searching.
 set incsearch
@@ -31,3 +32,11 @@ nnoremap mm :action ToggleBookmark<CR>
 nnoremap mi :action EditBookmark<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gD :action FindUsages<CR>
+nnoremap gn *N
+nnoremap gN :action HighlightUsagesInFile<CR>
+map <M-n> <Action>(FindNext)
+map <M-S-n> <Action>(FindPrevious)
+nnoremap `. :action JumpToLastChange<CR>
+
+set clipboard+=unnamed
+set clipboard+=ideaput
