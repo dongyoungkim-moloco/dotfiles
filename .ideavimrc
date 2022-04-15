@@ -31,6 +31,7 @@ set ignorecase
 nnoremap mm :action ToggleBookmark<CR>
 nnoremap mi :action EditBookmark<CR>
 nnoremap gi :action GotoImplementation<CR>
+nnoremap gt :action GotoTypeDeclaration<CR>
 nnoremap gD :action FindUsages<CR>
 nnoremap gn *N
 nnoremap gN :action HighlightUsagesInFile<CR>
