@@ -1,3 +1,4 @@
+" Find more examples here: https://jb.gg/share-ideavimrc
 "" Source your .vimrc
 "source ~/.vimrc
 
@@ -25,12 +26,14 @@ map Q gq
 "map \b <Action>(ToggleLineBreakpoint)
 
 
-" Find more examples here: https://jb.gg/share-ideavimrc
 
 set ignorecase
+nnoremap mn :action GotoNextBookmark<CR>
+nnoremap mp :action GotoPreviousBookmark<CR>
 nnoremap mm :action ToggleBookmark<CR>
 nnoremap mi :action EditBookmark<CR>
 nnoremap gi :action GotoImplementation<CR>
+nnoremap gp :action GotoSuperMethod<CR>
 nnoremap gt :action GotoTypeDeclaration<CR>
 nnoremap gD :action FindUsages<CR>
 nnoremap gn *N
